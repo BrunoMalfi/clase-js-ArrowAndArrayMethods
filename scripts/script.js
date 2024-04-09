@@ -174,3 +174,24 @@ const sentenceElements = [
     ];
 const sentenceElementsReduce= sentenceElements.reduce((cumulative,word)=> cumulative+" "+word )
 console.log('Ej Extra Reduce sentenceElementsReduce  : ',sentenceElementsReduce )
+
+// function factorial (numero,cumulative){
+//     if (cumulative == undefined){ cumulative = 1}
+//     if (numero >0 ){
+//         cumulative = numero * numero-1
+//         factorial(numero - 1,cumulative);
+//     }else{
+//     return cumulative
+//     }
+// }
+
+// const NumeroFact = 7; 
+//  console.log('Factorial : ', factorial(NumeroFact))
+const factorial = n => {
+    if (n === 0) {
+      return 1
+    }
+    return n * factorial(n - 1)
+  }
+
+  console.log('Factorial  del 7  con recursividd ', factorial(7))
